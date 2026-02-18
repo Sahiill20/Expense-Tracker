@@ -7,7 +7,7 @@ const expenseRoutes = require('./routes/expenseRoutes')
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://expense-tracker-gyee.onrender.com',
   credentials: true
 }));
 app.use(express.json());
