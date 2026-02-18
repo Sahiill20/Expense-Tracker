@@ -14,7 +14,7 @@ function App() {
     setLoading(true);
     try {
       const res = await axios.get(
-        `http://localhost:3000/api/expenses?category=${filters.category}&sort=${filters.sort}`
+        `https://expense-tracker-gyee.onrender.com/api/expenses?category=${filters.category}&sort=${filters.sort}`
       );
       setExpenses(res.data.data);
       setTotal(res.data.total);
