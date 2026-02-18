@@ -57,7 +57,7 @@ const ExpenseForm = ({ refreshExpenses }) => {
     setLoading(true);
 
     try {
-      await axios.post('https://expense-tracker-gyee.onrender.com/api/expenses', {
+      await axios.post('https://expense-tracker-gyee.onrender.com', {
         ...formData,
         idempotencyKey
       });
