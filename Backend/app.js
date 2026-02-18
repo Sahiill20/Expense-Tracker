@@ -12,7 +12,7 @@ app.use(cors({
 }));
 app.use(express.json());
 
-app.use('/api/expenses', expenseRoutes);
+app.use('/', expenseRoutes);
 
 const PORT = process.env.PORT || 5000;
 
